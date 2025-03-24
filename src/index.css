@@ -69,6 +69,7 @@ button:focus-visible {
 .swiper-button-next,
 .swiper-button-prev {
   color: white !important; /* Change arrow color */
+  display: none !important;
   color: gray !important; /* Change to your desired color */
 }
 .swiper-pagination-bullet-active {

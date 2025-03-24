@@ -203,7 +203,7 @@ const Home = () => {
         modules={[Navigation, Pagination]}
         spaceBetween={40}
         slidesPerView={1}
-        navigation
+        navigation={false}
         pagination={{ clickable: true }}
         className="w-full max-w-3xl mx-auto flex justify-center p-10 mt-20 "
       >
@@ -344,8 +344,8 @@ const Home = () => {
   <div className="w-11/12 place-self-center border-t border-gray-500/50 my-4"></div>
 
   {/* Footer Content */}
-  <div className="px-12 pt-0 pb-6 flex justify-between items-center w-full ">
-    <h4 className="text-gray-400 text-xs md:text-sm">All rights reserved</h4>
+  <div className="px-12 pt-0 pb-6 flex justify-center items-center w-full ">
+   
     <h5 className="text-gray-400 text-xs md:text-sm flex space-x-2">
       <a href="https://www.linkedin.com/in/amari-soumia-5a2521291" className="hover:text-gray-300">
         LinkedIn
