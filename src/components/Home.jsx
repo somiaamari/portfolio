@@ -73,8 +73,15 @@ const Home = () => {
 
       },
       {
-        "title": "Goulha Brand Identity",
-        "description": "A modern and user-friendly redesign of Progres, enhancing usability, visual appeal, and brand consistency.",
+        "title": "Shaghfi Brand Identity",
+        "description": "A creative and dynamic identity for a platform where passionate creators showcase their work and connect with a like-minded community.",
+        "image": "shaghafi",
+        "link": "https://www.behance.net/gallery/222420263/Shaghafi-Brand-Identity"
+
+      },
+      {
+        "title": "EduWorld Brand Identity",
+        "description": "A modern and professional identity for an online learning platform that connects students with quality educational content.",
         "image": "eduworldd",
         "link": "https://www.behance.net/gallery/213241153/EduWorld-brand-identity"
 
