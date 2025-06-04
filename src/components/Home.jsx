@@ -125,9 +125,9 @@ const Home = () => {
           <h1 className="text-white font-roboto font-extrabold text-4xl ">
             Amari Soumia
           </h1>
-          <h1 className="mt-8 font-semibold text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-rose to-white text-2xl">
+          {/* <h1 className="mt-8 font-semibold text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-rose to-white text-2xl">
             Full Stack Web Developer
-          </h1>
+          </h1> */}
           <h1 className="mb-8 font-semibold text-transparent bg-clip-text  bg-gradient-to-r from-indigo-500 via-rose to-white text-2xl ">
             Graphic Designer
           </h1>
