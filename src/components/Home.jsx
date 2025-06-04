@@ -67,14 +67,14 @@ const Home = () => {
       },
       {
         "title": "Goulha Brand Identity",
-        "description": "A modern and user-friendly redesign of Progres, enhancing usability, visual appeal, and brand consistency.",
+        "description": "A modern and creative identity for a public speaking event named GOULHA .",
         "image": "goulhaaa",
         "link": "https://www.behance.net/gallery/221281071/Goulha-Visual-Identity"
 
       },
       {
         "title": "Shaghfi Brand Identity",
-        "description": "A creative and dynamic identity for a platform where passionate creators showcase their work and connect with a like-minded community.",
+        "description": "A creative and dynamic identity for a platform where passionate creators showcase their work and have a community.",
         "image": "shaghafi",
         "link": "https://www.behance.net/gallery/222420263/Shaghafi-Brand-Identity"
 
