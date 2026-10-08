@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="paper" x1="90" x2="1090" y1="20" y2="610" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FBFAF0"/>
+      <stop offset="1" stop-color="#FFF4F5"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" rx="24" fill="url(#paper)"/>
+  <path d="M74 104h8v422h-8z" fill="#F3C4D2"/>
+  <text x="122" y="210" fill="#3E7D67" font-family="Montserrat,Arial,sans-serif" font-size="22" font-weight="700" letter-spacing="4">WHERE LOGIC MEETS ART</text>
+  <text x="116" y="310" fill="#392D33" font-family="Montserrat,Arial,sans-serif" font-size="66" font-weight="700">Soumia Amari</text>
+  <text x="120" y="372" fill="#67364F" font-family="Montserrat,Arial,sans-serif" font-size="28" font-weight="600">Full-Stack Developer</text>
+  <text x="120" y="418" fill="#67364F" font-family="Montserrat,Arial,sans-serif" font-size="26">AI &amp; Data Science Student</text>
+  <text x="120" y="490" fill="#66575D" font-family="Montserrat,Arial,sans-serif" font-size="21">I build full-stack applications and add intelligence to them.</text>
+  <g transform="translate(700 52) scale(.48)">
+    <path d="M15 4c103 73 146 146 181 235 31 79 92 129 177 158M115 68c91 31 140 13 211-20M177 147c86-4 139-34 176-87M218 228c79-17 129-39 180-86" fill="none" stroke="#776047" stroke-linecap="round" stroke-opacity=".56" stroke-width="12"/>
+    <g fill="#F3C4D2" stroke="#8A4A6C" stroke-opacity=".48" stroke-width="2">
+      <circle cx="111" cy="69" r="21"/><circle cx="284" cy="47" r="24"/>
+      <circle cx="346" cy="124" r="22"/><circle cx="219" cy="222" r="20"/>
+      <circle cx="397" cy="142" r="19"/><circle cx="321" cy="204" r="22"/>
+    </g>
+    <path d="M777 256h152l-17 23H794l-17-23Zm-12-6 89-36 88 36H765Zm24-45 65-28 64 28H789Z" fill="#8A4A6C"/>
+    <path d="M806 278v104m95-104v104m-59-104v104m24-104v104" stroke="#70475B" stroke-linecap="round" stroke-width="8"/>
+    <path d="M610 407c124 0 163-91 267-91 107 0 151 91 272 91v31H610v-31Z" fill="#E8BDC9" stroke="#8A4A6C" stroke-opacity=".54" stroke-width="5"/>
+    <path d="M635 414c101-5 141-81 242-81s146 76 247 81m-514-7h539" fill="none" stroke="#8A4A6C" stroke-linecap="round" stroke-opacity=".6" stroke-width="9"/>
+    <path d="M705 493c104 11 199 10 296-3m-346 40c146 11 293 9 430-8" fill="none" stroke="#3E7D67" stroke-linecap="round" stroke-opacity=".25" stroke-width="9"/>
+  </g>
+</svg>
