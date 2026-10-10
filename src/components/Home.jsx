@@ -1,56 +1,116 @@
-import { createElement, useEffect, useState } from 'react'
-import {
-  FaBrain,
-  FaChartLine,
-  FaCode,
-  FaDocker,
-  FaEnvelope,
-  FaGitAlt,
-  FaHtml5,
-  FaJs,
-  FaLinkedin,
-  FaNodeJs,
-  FaPython,
-  FaReact,
-} from 'react-icons/fa'
-import { SiTailwindcss } from 'react-icons/si'
+import { useEffect, useState } from 'react'
+import { FaEnvelope, FaLinkedin, FaCode } from 'react-icons/fa'
 import projects from '../data/projects.js'
 
 const skillGroups = [
   {
-    title: 'Frontend',
+    title: 'ML & Deep Learning',
+    skills: ['TensorFlow', 'Keras', 'PyTorch', 'Scikit-learn', 'Pandas'],
+  },
+  {
+    title: 'ML Algorithms',
     skills: [
-      { name: 'React', Icon: FaReact },
-      { name: 'JavaScript', Icon: FaJs },
-      { name: 'HTML5', Icon: FaHtml5 },
-      { name: 'Tailwind CSS', Icon: SiTailwindcss },
+      'Linear Regression',
+      'Logistic Regression',
+      'Naïve Bayes',
+      'KNN',
+      'SVM',
+      'Decision Trees',
+      'Random Forest',
+      'Gradient Boosting',
+      'XGBoost',
+      'K-Means',
+      'Hierarchical Clustering',
+      'DBSCAN',
+      'PCA',
+      'Kernel PCA',
+      'SVD',
+      'NMF',
+      'Cross-validation',
+      'Regularization',
     ],
   },
   {
-    title: 'Backend',
-    skills: [{ name: 'Node.js', Icon: FaNodeJs }],
-  },
-  {
-    title: 'AI & Data',
+    title: 'Deep Learning Models',
     skills: [
-      { name: 'Python', Icon: FaPython },
-      { name: 'Data Science', Icon: FaChartLine },
-      { name: 'Machine Learning', Icon: FaBrain },
+      'MLP',
+      'CNN (ResNet, MobileNet, EfficientNet)',
+      'RNN',
+      'LSTM',
+      'GRU',
+      'Autoencoders',
+      'GAN',
+      'Transfer Learning',
+      'Adam optimizer',
+      'Batch Normalization',
     ],
   },
   {
-    title: 'Tools',
+    title: 'NLP & RAG',
     skills: [
-      { name: 'Docker', Icon: FaDocker },
-      { name: 'Git', Icon: FaGitAlt },
+      'RNN',
+      'LSTM',
+      'BERT',
+      'BART',
+      'LlamaIndex',
+      'RAG',
+      'Vector embeddings',
+      'Reranking',
+      'Tokenization',
+      'Lemmatization',
+      'NER',
+      'POS tagging (HMM, Viterbi)',
+      'Bag of Words',
+      'Word embeddings',
+      'Seq2seq',
+      'Attention mechanisms',
+      'Neural machine translation',
     ],
+  },
+  {
+    title: 'Computer Vision',
+    skills: ['Image classification', 'Object detection', 'Image segmentation'],
+  },
+  {
+    title: 'MLOps',
+    skills: [
+      'Flask',
+      'Model deployment via REST API',
+      'MLflow',
+      'TensorFlow Serving',
+      'CI/CD',
+    ],
+  },
+  {
+    title: 'Programming & Web',
+    skills: [
+      'Python',
+      'Java',
+      'JavaScript',
+      'SQL',
+      'React',
+      'Node.js',
+      'Express.js',
+      'HTML/CSS',
+      'Tailwind',
+      'Streamlit',
+    ],
+  },
+  {
+    title: 'Databases',
+    skills: ['MySQL', 'PostgreSQL', 'MongoDB', 'Neo4j', 'Qdrant', 'Cassandra'],
+  },
+  {
+    title: 'Tools & Design',
+    skills: ['Docker', 'Git', 'Postman', 'Figma', 'Adobe Illustrator', 'Photoshop'],
   },
 ]
 
-const filters = [
+const projectFilters = [
   { label: 'All', value: 'all' },
   { label: 'Full-Stack', value: 'full-stack' },
   { label: 'AI & Data', value: 'ai-data' },
+  { label: 'UI / UX Design', value: 'design' },
 ]
 
 const petals = ['petal-one', 'petal-two', 'petal-three', 'petal-four', 'petal-five']
@@ -103,6 +163,9 @@ function Home() {
             <a href="#about">About</a>
             <a href="#skills">Skills</a>
             <a href="#projects">Projects</a>
+            <a className="nav-cv" href="/Soumia-Amari-CV.pdf" download>
+              CV
+            </a>
             <a className="nav-contact" href="#contact">
               Contact
             </a>
@@ -119,7 +182,6 @@ function Home() {
           </div>
           <div className="hero-art" aria-hidden="true" />
           <div className="hero-content page-shell">
-            <p className="eyebrow">Where logic meets art</p>
             <h1 id="hero-title">
               Hello, I&apos;m <span>Soumia Amari</span>
             </h1>
@@ -132,7 +194,7 @@ function Home() {
             </p>
             <p className="availability">
               <span className="availability-dot" aria-hidden="true" />
-              Open to PFE internship in AI / Data Science
+              Open to opportunities in AI / Data Science
             </p>
             <div className="hero-actions">
               <a className="button button-primary" href="#contact">
@@ -150,8 +212,7 @@ function Home() {
 
         <section className="section page-shell about-section" id="about">
           <div className="section-heading reveal">
-            <p className="eyebrow">A little about me</p>
-            <h2>Curious by nature, thoughtful in my work.</h2>
+            <h2>A little about me</h2>
           </div>
           <div className="about-grid">
             <div className="about-copy reveal">
@@ -161,49 +222,13 @@ function Home() {
                 interface to the data and intelligence behind it.
               </p>
               <p>
-                I&apos;m currently looking for a final-year PFE internship where I can
-                keep learning and contribute to meaningful AI or data science work.
+                I&apos;m eager to keep learning and contribute to meaningful AI or
+                data science work.
               </p>
               <blockquote>
                 I build software the way I paint: structure first, then a little
                 soul on top.
               </blockquote>
-            </div>
-            <div className="code-card reveal" aria-label="A code-style introduction">
-              <div className="code-card-top" aria-hidden="true">
-                <span />
-                <span />
-                <span />
-                <small>soumia.js</small>
-              </div>
-              <pre>
-                <code>
-                  <span className="code-keyword">const</span> soumia = {'{'}
-                  {'\n'}  roles: [
-                  {'\n'}    <span className="code-string">
-                      &quot;Full-Stack Developer&quot;
-                    </span>
-                  ,
-                  {'\n'}    <span className="code-string">
-                      &quot;AI &amp; Data Science Student&quot;
-                    </span>
-                  ,
-                  {'\n'}  ],
-                  {'\n'}  stack: [
-                  {'\n'}    <span className="code-string">
-                      &quot;React&quot;
-                    </span>
-                  , <span className="code-string">&quot;Node.js&quot;</span>,{' '}
-                  <span className="code-string">&quot;Python&quot;</span>,
-                  {'\n'}    <span className="code-string">
-                      &quot;Machine Learning&quot;
-                    </span>
-                  ,
-                  {'\n'}  ],
-                  {'\n'}
-                  {'}'};
-                </code>
-              </pre>
             </div>
           </div>
         </section>
@@ -223,13 +248,9 @@ function Home() {
                 <article className="skill-group reveal" key={group.title}>
                   <h3>{group.title}</h3>
                   <ul>
-                    {group.skills.map(({ name, Icon }) => (
-                      <li className="skill-item" key={name}>
-                        {createElement(Icon, {
-                          'aria-hidden': true,
-                          focusable: false,
-                        })}
-                        <span>{name}</span>
+                    {group.skills.map((skill) => (
+                      <li className="skill-item" key={skill}>
+                        <span>{skill}</span>
                       </li>
                     ))}
                   </ul>
@@ -241,15 +262,14 @@ function Home() {
 
         <section className="section page-shell projects-section" id="projects">
           <div className="section-heading reveal">
-            <p className="eyebrow">Selected work</p>
-            <h2>Projects with purpose</h2>
+            <p className="eyebrow">All my work</p>
+            <h2>Projects</h2>
             <p className="section-intro">
-              A selection of projects from my public GitHub repositories, spanning
-              interactive applications, data, and AI.
+              Academic and personal projects, including work currently in progress.
             </p>
           </div>
           <div className="project-filters reveal" aria-label="Filter projects">
-            {filters.map(({ label, value }) => (
+            {projectFilters.map(({ label, value }) => (
               <button
                 aria-pressed={activeFilter === value}
                 className={activeFilter === value ? 'filter-button is-active' : 'filter-button'}
@@ -270,6 +290,9 @@ function Home() {
               >
                 <div className="project-card-top">
                   <span className="project-category">{project.category}</span>
+                  {project.status && (
+                    <span className="project-status">{project.status}</span>
+                  )}
                   <FaCode aria-hidden="true" className="project-icon" />
                 </div>
                 <h3>{project.title}</h3>
@@ -283,13 +306,15 @@ function Home() {
                   ))}
                 </ul>
                 <div className="project-links">
-                  <a
-                    href={project.repository}
-                    rel="noreferrer"
-                    target="_blank"
-                  >
-                    Code <span aria-hidden="true">↗</span>
-                  </a>
+                  {project.repository && (
+                    <a
+                      href={project.repository}
+                      rel="noreferrer"
+                      target="_blank"
+                    >
+                      Code <span aria-hidden="true">↗</span>
+                    </a>
+                  )}
                   {project.demo && (
                     <a href={project.demo} rel="noreferrer" target="_blank">
                       Live demo <span aria-hidden="true">↗</span>
@@ -299,16 +324,6 @@ function Home() {
               </article>
             ))}
           </div>
-          <div className="github-cta reveal">
-            <a
-              className="button button-primary"
-              href="https://github.com/somiaamari"
-              rel="noreferrer"
-              target="_blank"
-            >
-              More on GitHub <span aria-hidden="true">↗</span>
-            </a>
-          </div>
         </section>
 
         <section className="section contact-section" id="contact">
@@ -316,8 +331,8 @@ function Home() {
             <p className="eyebrow">Let&apos;s talk</p>
             <h2>Building something thoughtful?</h2>
             <p>
-              I&apos;m open to a PFE internship in AI or data science, and always
-              happy to connect about good ideas.
+              I&apos;m always happy to connect about good ideas and thoughtful
+              projects.
             </p>
             <div className="contact-links">
               <a className="button button-primary" href="mailto:amarisoumia11405@gmail.com">
@@ -342,11 +357,14 @@ function Home() {
                 <FaCode aria-hidden="true" />
                 GitHub
               </a>
+              <a
+                className="button button-outline"
+                href="/Soumia-Amari-CV.pdf"
+                download
+              >
+                Download CV
+              </a>
             </div>
-            <p className="cv-note">
-              <strong>CV:</strong> TODO — add a downloadable CV when a file is
-              available.
-            </p>
           </div>
         </section>
       </main>
