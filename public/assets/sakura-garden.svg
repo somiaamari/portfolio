@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" fill="none">
+  <defs>
+    <linearGradient id="wash" x1="190" x2="1010" y1="90" y2="510" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F3C4D2" stop-opacity=".34"/>
+      <stop offset=".55" stop-color="#EAC9D0" stop-opacity=".13"/>
+      <stop offset="1" stop-color="#3E7D67" stop-opacity=".16"/>
+    </linearGradient>
+    <linearGradient id="bridge" x1="578" x2="1000" y1="362" y2="472" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E8BDC9"/>
+      <stop offset="1" stop-color="#F5DCE1"/>
+    </linearGradient>
+    <g id="flower" stroke="#8A4A6C" stroke-opacity=".46" stroke-width="1.4">
+      <ellipse cy="-8" rx="4.7" ry="8" fill="#F3C4D2"/>
+      <ellipse cx="7.6" cy="-2.5" rx="4.7" ry="8" fill="#F7D8DF" transform="rotate(72 7.6 -2.5)"/>
+      <ellipse cx="4.7" cy="6.5" rx="4.7" ry="8" fill="#F3C4D2" transform="rotate(144 4.7 6.5)"/>
+      <ellipse cx="-4.7" cy="6.5" rx="4.7" ry="8" fill="#F7D8DF" transform="rotate(216 -4.7 6.5)"/>
+      <ellipse cx="-7.6" cy="-2.5" rx="4.7" ry="8" fill="#F3C4D2" transform="rotate(288 -7.6 -2.5)"/>
+      <circle r="2.4" fill="#8A4A6C" stroke="none"/>
+    </g>
+  </defs>
+  <ellipse cx="718" cy="300" rx="470" ry="245" fill="url(#wash)"/>
+  <path d="M15 4c103 73 146 146 181 235 31 79 92 129 177 158" stroke="#776047" stroke-linecap="round" stroke-opacity=".48" stroke-width="8"/>
+  <path d="M115 68c91 31 140 13 211-20M177 147c86-4 139-34 176-87M218 228c79-17 129-39 180-86M265 308c76-27 129-26 181-26M96 83c-34-26-63-34-91-35M155 125c-42-13-68-12-105-2M218 216c-38-21-66-28-103-28" stroke="#776047" stroke-linecap="round" stroke-opacity=".4" stroke-width="4"/>
+  <g opacity=".92">
+    <use href="#flower" transform="translate(111 69) scale(1.15)"/>
+    <use href="#flower" transform="translate(198 48)"/>
+    <use href="#flower" transform="translate(284 47) scale(1.3)"/>
+    <use href="#flower" transform="translate(350 78) scale(.82)"/>
+    <use href="#flower" transform="translate(177 145) scale(1.1)"/>
+    <use href="#flower" transform="translate(346 124)"/>
+    <use href="#flower" transform="translate(397 142) scale(1.2)"/>
+    <use href="#flower" transform="translate(219 222) scale(.9)"/>
+    <use href="#flower" transform="translate(321 204) scale(1.2)"/>
+    <use href="#flower" transform="translate(437 224)"/>
+    <use href="#flower" transform="translate(276 307) scale(1.1)"/>
+    <use href="#flower" transform="translate(418 278) scale(.9)"/>
+    <use href="#flower" transform="translate(65 52) scale(.7)"/>
+    <use href="#flower" transform="translate(123 170) scale(.65)"/>
+  </g>
+  <path d="M777 256h152l-17 23H794l-17-23Z" fill="#8A4A6C" fill-opacity=".74"/>
+  <path d="m765 250 89-36 88 36H765Z" fill="#8A4A6C" fill-opacity=".78"/>
+  <path d="m789 205 65-28 64 28H789Z" fill="#8A4A6C" fill-opacity=".72"/>
+  <path d="M806 278v104m95-104v104m-59-104v104m24-104v104" stroke="#70475B" stroke-linecap="round" stroke-opacity=".68" stroke-width="8"/>
+  <path d="M769 206h170M790 250h128M780 279h150" stroke="#F3C4D2" stroke-linecap="round" stroke-opacity=".75" stroke-width="5"/>
+  <path d="M713 383c61-9 132-15 207-13 77 2 145 10 228 28v22c-99-19-175-26-248-25-76 2-133 9-187 16v-28Z" fill="#3E7D67" fill-opacity=".24"/>
+  <path d="M610 407c124 0 163-91 267-91 107 0 151 91 272 91v31H610v-31Z" fill="url(#bridge)" stroke="#8A4A6C" stroke-opacity=".54" stroke-width="5"/>
+  <path d="M635 414c101-5 141-81 242-81s146 76 247 81" stroke="#8A4A6C" stroke-opacity=".5" stroke-width="7"/>
+  <path d="M610 407h539" stroke="#8A4A6C" stroke-linecap="round" stroke-opacity=".6" stroke-width="10"/>
+  <path d="M640 438c84 13 173 20 277 20 75 0 156-5 237-17" stroke="#3E7D67" stroke-linecap="round" stroke-opacity=".22" stroke-width="8"/>
+  <path d="M705 493c104 11 199 10 296-3m-346 40c146 11 293 9 430-8" stroke="#3E7D67" stroke-linecap="round" stroke-opacity=".17" stroke-width="5"/>
+  <path d="M900 511c50-61 105-72 161-69-23 35-70 67-161 69Z" fill="#3E7D67" fill-opacity=".27"/>
+  <path d="M914 505c47-27 83-42 138-59" stroke="#3E7D67" stroke-linecap="round" stroke-opacity=".45" stroke-width="3"/>
+  <g fill="#F3C4D2" fill-opacity=".6">
+    <circle cx="563" cy="262" r="5"/><circle cx="526" cy="317" r="4"/>
+    <circle cx="1012" cy="167" r="5"/><circle cx="1080" cy="221" r="4"/>
+    <circle cx="1015" cy="321" r="5"/><circle cx="1122" cy="354" r="3"/>
+    <circle cx="573" cy="372" r="3"/><circle cx="487" cy="251" r="3"/>
+  </g>
+</svg>
