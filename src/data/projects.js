@@ -8,6 +8,7 @@ const projects = [
     filter: 'full-stack',
     role: 'Team project',
     stack: ['FastAPI', 'React', 'Whisper large-v3', 'LoRA / PEFT', 'pyannote.audio', 'LLM'],
+    repository: 'https://github.com/somiaamari/project_meetly'
   },
   {
     slug: 'multimodal-enterprise-rag',
@@ -40,7 +41,7 @@ const projects = [
     filter: 'ai-data',
     role: 'Team project',
     stack: ['Python', 'NLP', 'BART', 'Streamlit'],
-    repository: 'https://github.com/soummarin/NLP_project',
+    repository: 'https://github.com/somiaamari/NLP_project',
   },
   {
     slug: 'autism-detection',
